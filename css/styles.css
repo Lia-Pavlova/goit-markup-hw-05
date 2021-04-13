@@ -173,10 +173,16 @@ nav {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition: color var(--animation);
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
   align-items: center;
+}
+
+.contacts .link:hover .e-maile-phone,
+.contacts .link:focus .e-maile-phone {
+  color: var(--accent-color);
 }
 
 .icon-contacts {
@@ -184,6 +190,7 @@ nav {
   fill: var(--primary-text-color);
   transition: fill var(--animation);
 }
+
 .contacts .link:hover .icon-contacts,
 .contacts .link:focus .icon-contacts {
   fill: var(--accent-color);
@@ -421,6 +428,7 @@ header > .container {
   flex-basis: calc((100%-90px) / 3);
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--dark-bg-text-color);
 }
 .team-name {
   font-weight: 500;
@@ -664,10 +672,6 @@ header > .container {
   color: var(--dark-bg-text-color);
 }
 
-.address-footer {
-  color: var(--dark-bg-text-color);
-}
-
 .address-footer p {
   margin-bottom: 9px;
 }
@@ -677,6 +681,7 @@ header > .container {
 }
 .e-mail-phone-footer {
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--animation);
 }
 
 .join {
